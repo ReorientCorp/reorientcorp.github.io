@@ -140,7 +140,7 @@ input[name="checkGBS"]:checked ~ .more-container + .show-more::after {
   cursor: pointer;
 }
 
-.show-more:hover {
+label.show-more:hover::after {
   color: #4dc9ff;
 }
 

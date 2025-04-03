@@ -4,12 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reorient Corporation develops advanced software solutions for engineering and scientific applications.">
+
     <title>Reorient Corp</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=0.4" />
 </head>
 
 <body>
-    <h1>Initial Commit</h1>
+
+    <main>
+        <section>
+            <img class="hero-logo" src="images/reorient-logo@1x.png"
+                srcset="images/reorient-logo@2x.png 2x, images/reorient-logo@3x.png 3x" alt="Reorient Corp Logo">
+            <h1 id="about">Reorient <span>Corp</span></h1>
+            <div class="hero-description">Reorient Corporation develops advanced software solutions for engineering and
+                scientific applications. We specialize in modeling complex systems, analyzing dynamic data, and building
+                interactive
+                visualization tools that turn raw information into actionable insights. <span class="hide-small">Our
+                    work spans aerospace,
+                    environmental science, infrastructure, and emerging technologies, tackling challenges in human
+                    perception and spatial orientation, virtual reality and simulation, psychometric and physiological
+                    research, experimental design, and AI-driven software development. </span><span
+                    class="hide-medium">By combining
+                    technical expertise with
+                    deep analytical insight, we create precise, scalable solutions that help clients navigate complexity
+                    and
+                    drive innovation.</span></div>
+        </section>
+        <div class="divider">
+            <img src="images/aircraft-divider@1x.png"
+                srcset="images/aircraft-divider@2x.png 2x, images/aircraft-divider@3x.png 3x"
+                alt="Fighter aircraft horizontal divider">
+        </div>
+        <section>
+            <h2 id="projects">What we are working on</h2>
+            <div class="about-item">
+                <h3>Enhancing 3D Audio for Fighter Pilots</h3>
+                <input name="check3d" type="checkbox" id="toggle3d" hidden>
+                <div class="more-container">
+                    <p>Modern fighter jets, including the F-35, use 3D audio cues to enhance situational awareness and
+                        reduce pilot workload. These spatially localized sounds help pilots quickly interpret threats,
+                        navigation data, and system alerts. However, during high-G maneuvers, these cues can become
+                        mislocalized, making sounds appear out of position as the central nervous system struggles to
+                        reconcile auditory input with signals from other sensory systems (e.g., vestibular,
+                        proprioceptive).
+                    </p>
+                    <p>Reorient Corp is collaborating with the U.S. Air Force&#39;s 711th Human Performance Wing and the
+                        Naval
+                        Aerospace Medical Research Laboratory (NAMRL) to conduct human subject experiments aimed at
+                        provoking, modeling, and mitigating these complex perceptual illusions.
+                    </p>
+                </div>
+                <label for="toggle3d" class="show-more"></label>
+
+            </div>
+            <div class="about-item">
+                <h3>Building the Perception Computer</h3>
+                <input name="checkPC" type="checkbox" id="togglePC" hidden>
+                <div class="more-container">
+                    <p>Pilots, astronauts, and vehicle operators experience complex motion environments that challenge
+                        human
+                        perception of orientation and movement. Accurately modeling these perceptual responses is
+                        critical
+                        for improving training, simulation fidelity, and safety.
+                    </p>
+                    <p>Reorient Corp is developing Perception Computer, a spatial orientation modeling platform that
+                        integrates motion data from diverse sources—flight recorders, simulators, research devices, and
+                        even
+                        mobile sensors. For decades, perception models have been developed for and within the academic
+                        domain, limiting their accessibility and practical application. Perception Computer eliminates
+                        these
+                        barriers by providing a web-based platform built on open technologies, making it easier for
+                        researchers and engineers to use and improve these models. Over time, the platform will
+                        incorporate
+                        models from academic literature and a growing database of experimental validation data, enabling
+                        new
+                        ways to visualize and understand human motion perception.</p>
+                </div>
+                <label for="togglePC" class="show-more"></label>
+            </div>
+            <div class="about-item">
+                <h3>Transforming How Stormwater Data is Collected and Used</h3>
+                <input name="checkVU" type="checkbox" id="toggleVU" hidden>
+                <div class="more-container">
+                    <p>Despite the growing availability of stormwater data, barriers like inconsistent formats and data
+                        silos continue to limit its impact. To advance research, infrastructure planning, and
+                        decision-making, data must be more accessible, integrated, and actionable.
+                    </p>
+                    <p>Reorient Corp is developing a new web-based stormwater data platform for the Villanova Center for
+                        Resilient Water Systems. This second-generation system is built around the Stormwater
+                        Infrastructure
+                        Data Model (SIDM), designed to streamline data organization, retrieval, and analysis. The
+                        platform
+                        will provide researchers, municipalities, and utilities with tools to log, visualize, and
+                        analyze
+                        spatiotemporal stormwater data, enabling better collaboration and deeper insights into system
+                        performance and resilience.</p>
+                </div>
+                <label for="toggleVU" class="show-more"></label>
+            </div>
+            <div class="about-item">
+                <h3>Rethinking Construction Oversight in Developing Regions</h3>
+                <input name="checkGBS" type="checkbox" id="toggleGBS" hidden>
+                <div class="more-container">
+                    <p>Traditional construction management platforms are designed for large-scale projects in highly
+                        connected environments, making them impractical for infrastructure development in remote
+                        regions.
+                        Limited internet access, language barriers, and field communication challenges often hinder
+                        effective oversight.
+                    </p>
+                    <p>Reorient Corp, in collaboration with GBC, is developing Global Build Solutions, a web-based
+                        platform
+                        built specifically for managing construction projects in the developing world. Currently
+                        deployed in
+                        Uganda, Tanzania, and the Democratic Republic of the Congo, the system enables field teams to
+                        document progress using a mobile app that works offline, syncing when connectivity is available.
+                        Field reports, photos, and milestone tracking are streamlined into a centralized system,
+                        allowing
+                        engineers to review, provide feedback, and request additional context. Designed for simplicity
+                        and
+                        adaptability, Global Build Solutions brings modern oversight and standardized inspection
+                        protocols
+                        to projects that would otherwise struggle with traditional management tools.</p>
+                </div>
+                <label for="toggleGBS" class="show-more"></label>
+            </div>
+        </section>
+        <div class="divider">
+            <img src="images/brain-divider@1x.png"
+                srcset="images/brain-divider@2x.png 2x, images/brain-divider@3x.png 3x"
+                alt="Computer brain horizontal divider">
+        </div>
+        <section>
+            <h2 id="team">Who we are</h2>
+            <div class="team-item">
+                <h3>Michael Newman</h3>
+                <p>Reorient Corp was founded by Michael Newman in 2021. Before establishing Reorient, Michael served as
+                    the Director of Research and Development for Human Factors at the National Aerospace Training and
+                    Research Center for over a decade. In this role, he led more than 20 experiments and projects
+                    focused on understanding and predicting human perception and cognition in extreme environments,
+                    including high-G flight, outer space, high altitude, and combat scenarios.</p>
+                <p>Michael holds a Master&#39;s degree in Aeronautics and Astronautics from MIT&#39;s Man Vehicle
+                    Laboratory and a Bachelor&#39;s degree in Mechanical Engineering from Villanova University.</p>
+            </div>
+        </section>
+        <div class="divider">
+            <img src="images/computer-divider@1x.png"
+                srcset="images/computer-divider@2x.png 2x, images/computer-divider@3x.png 3x"
+                alt="Computer matrix horizontal divider">
+        </div>
+        <section>
+            <h2 id="contact">Interested in working together?</h2>
+            <a href="mailto:reorientcorp+web@gmail.com">
+                <div class="contact-btn">Get In Touch</div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div><a href="privacy.html">Privacy Policy</a> <span class="dot">·</span> <a
+                href="mailto:reorientcorp+web@gmail.com">Contact Us</a></div>
+        <div class="footer-ai">All images and logos on this webpage were created using generative AI.</div>
+        <span>&copy; 2025 All rights reserved</span>
+    </footer>
 </body>
 
 </html>

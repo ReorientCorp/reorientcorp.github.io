@@ -1,0 +1,339 @@
+/* Basics */
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
+}
+
+section {
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 640px;
+  padding-top: 36px;
+  padding-bottom: 72px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+h1 > span {
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding-bottom: 12px;
+  line-height: 1.3em;
+}
+
+p {
+  font-weight: 200;
+  padding-bottom: 12px;
+  line-height: 1.7;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* Custom Styles */
+.more-container {
+  max-height: 6rem;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  color: white;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+input[name="check3d"]:checked ~ .more-container {
+  max-height: unset;
+  overflow: unset;
+  position: unset;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+input[name="checkPC"]:checked ~ .more-container {
+  max-height: unset;
+  overflow: unset;
+  position: unset;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+input[name="checkVU"]:checked ~ .more-container {
+  max-height: unset;
+  overflow: unset;
+  position: unset;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+input[name="checkGBS"]:checked ~ .more-container {
+  max-height: unset;
+  overflow: unset;
+  position: unset;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* Default label text */
+.show-more::after {
+  content: "Show More +";
+  color: #fff;
+}
+
+/* When checked, change label text */
+input[name="check3d"]:checked ~ .more-container + .show-more::after {
+  content: "Show Less -";
+  color: #4dc9ff;
+}
+
+input[name="checkPC"]:checked ~ .more-container + .show-more::after {
+  content: "Show Less -";
+  color: #4dc9ff;
+}
+
+input[name="checkVU"]:checked ~ .more-container + .show-more::after {
+  content: "Show Less -";
+  color: #4dc9ff;
+}
+
+input[name="checkGBS"]:checked ~ .more-container + .show-more::after {
+  content: "Show Less -";
+  color: #4dc9ff;
+}
+
+.show-more {
+  padding-top: 4px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  color: #4dc9ff;
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.divider img {
+  object-fit: cover;
+  object-position: center;
+  height: 172px;
+}
+
+/* Hero Section */
+.hero-logo {
+  max-width: 280px;
+  transform: translateX(-8px);
+}
+
+.hero-description {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 1.7em;
+}
+
+/* About Section */
+.about-item {
+  padding-top: 72px;
+}
+
+.about-item h3 {
+  color: #ffce2e;
+}
+
+/* Team Section */
+
+.team-item {
+  padding-top: 72px;
+}
+
+.team-item h3 {
+  color: #ff6771;
+}
+
+/* Conact Section */
+.contact-divider {
+  height: 172px;
+}
+
+.contact-btn {
+  margin-top: 36px;
+  color: #3cbefb;
+  text-transform: uppercase;
+  font-size: 1.34rem;
+  border: 2px solid #3cbefb;
+  padding: 8px 36px;
+  border-radius: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #ffffff1a;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin: 48px 0px;
+  gap: 12px;
+}
+
+.dot {
+  font-weight: 900;
+  padding: 0px 8px;
+}
+
+.footer-ai {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+footer a:hover {
+  color: #0bb1ff;
+}
+
+footer span {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+  main {
+    padding-top: 36px;
+  }
+
+  section {
+    margin: 0px 24px;
+    padding-top: 18px;
+    padding-bottom: 36px;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-top: 12px;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    line-height: 1.7em;
+  }
+
+  .hero-logo {
+    max-width: 220px;
+    transform: translateX(-6px);
+  }
+
+  .about-item,
+  .team-item {
+    padding-top: 48px;
+  }
+
+  .divider img {
+    height: 144px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide-small {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .about-item,
+  .team-item {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 420px) {
+  section {
+    margin: 0px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-logo {
+    max-width: 200px;
+    transform: translateX(-5px);
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

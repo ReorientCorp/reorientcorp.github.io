@@ -1,0 +1,163 @@
+/*
+<header>
+        <div class="circle-divider">
+            <a href="#about">
+                <div class="divider-circle hover-purple"></div>
+            </a>
+            <a href="#projects">
+                <div class="divider-circle hover-yellow"></div>
+            </a>
+            <a href="#team">
+                <div class="divider-circle hover-red"></div>
+            </a>
+            <a href="#contact">
+                <div class="divider-circle hover-blue"></div>
+            </a>
+        </div>
+    </header>
+*/
+
+/* Header and Nav */
+header {
+  padding-top: 120px;
+}
+
+.circle-divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding-bottom: 64px;
+  display: none;
+}
+
+.divider-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.divider-circle:hover {
+  animation: glow 0.5s ease-in-out infinite alternate;
+  transition: box-shadow 0.1s ease;
+}
+
+.hover-blue:hover {
+  color: #0bb1ff;
+  background-color: #0bb1ff;
+}
+
+.hover-blue:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  color: #3cbefb;
+  position: relative;
+  background: transparent;
+  top: -28px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 160ms ease-in-out;
+}
+
+.hover-blue:hover:after {
+  content: "Contact";
+  opacity: 1;
+}
+
+.hover-yellow:hover {
+  color: #ffce2e;
+  background-color: #ffce2e;
+}
+
+.hover-yellow:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  color: #ffce2e;
+  position: relative;
+  background: transparent;
+  top: -28px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 160ms ease-in-out;
+}
+
+.hover-yellow:hover:after {
+  content: "Projects";
+  opacity: 1;
+}
+
+.hover-red:hover {
+  color: #ff6771;
+  background-color: #ff6771;
+}
+
+.hover-red:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  color: #ff6771;
+  position: relative;
+  background: transparent;
+  top: -28px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 160ms ease-in-out;
+}
+
+.hover-red:hover:after {
+  content: "Team";
+  opacity: 1;
+}
+
+.hover-purple:hover {
+  color: #ff49e1;
+  background-color: #ff49e1;
+}
+
+.hover-purple:after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  color: #ff49e1;
+  position: relative;
+  background: transparent;
+  top: -28px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 160ms ease-in-out;
+}
+
+.hover-purple:hover:after {
+  content: "About";
+  opacity: 1;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 px 0px currentColor;
+  }
+  to {
+    box-shadow: 0 0 1px 1px currentColor;
+  }
+}

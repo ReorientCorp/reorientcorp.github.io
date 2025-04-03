@@ -202,7 +202,7 @@ input[name="checkGBS"]:checked ~ .more-container + .show-more::after {
   border: 2px solid #3cbefb;
   padding: 8px 36px;
   border-radius: 12px;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 3px;
   cursor: pointer;
 }
@@ -324,6 +324,11 @@ footer span {
 @media (max-width: 420px) {
   section {
     margin: 0px 12px;
+  }
+
+  .contact-btn {
+    font-size: 1.2rem;
+    padding: 8px 24px;
   }
 }
 

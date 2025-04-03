@@ -189,7 +189,7 @@ input[name="checkGBS"]:checked ~ .more-container + .show-more::after {
   color: #ff6771;
 }
 
-/* Conact Section */
+/* Contact Section */
 .contact-divider {
   height: 172px;
 }
@@ -250,6 +250,13 @@ footer a:hover {
 footer span {
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.privacy-updated {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Responsive */
